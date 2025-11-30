@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object Launch Simulation</title>
+  <style>
+    #object {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #answers {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="object"></div>
+  <div id="answers"></div>
+
+  <script>
+    // Constants
+    var g = 9.8; // acceleration due to gravity (m/s^2)
+    var v0 = 20; // initial velocity (m/s)
+    var angle = 25; // angle of launch (degrees)
+  
+    // Convert angle to radians
+    angle = angle * Math.PI / 180;
+  
+    // Calculate x and y components of initial velocity
+    var v0x = v0 * Math.cos(angle);
+    var v0y = v0 * Math.sin(angle);
+  
+    // Calculate maximum height
+    var hmax = (v0y * v0y) / (2 * g);
+  
+    // Calculate total flight time
+    var t = (2 * v0y) / g;
+  
+    // Calculate horizontal range
+    var xmax = v0x * t;
+  
+    // Calculate final velocity
+    var vx = v0x;
+    var vy = v0y - g * t;
+    var v = Math.sqrt(vx * vx + vy * vy);
+    
+      // Display answers
+  document.getElementById("answers").innerHTML =
+    "a) Maximum height: " + hmax.toFixed(2) + " m<br>" +
+    "b) Total flight time: " + t.toFixed(2) + " s<br>" +
+    "c) Horizontal range: " + xmax.toFixed(2) + " m<br>" +
+    "d) Final velocity: " + v.toFixed(2) + " m/s";
+
+    </script>
+
+
+</body>
+</html>
