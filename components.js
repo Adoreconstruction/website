@@ -47,7 +47,7 @@ const ADORE_FOOTER = `
         <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Malangawa &amp; Janakpur, Province 2, Nepal</span></div>
         <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:contact@adoreconstruction.com">contact@adoreconstruction.com</a></div>
         <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+9779854076050">+977 9854 076 050</a></div>
-        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+9779801676049">+977 9801 676 049</a></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+9779801676050">+977 9801 676 050</a></div>
         <div class="footer-socials">
           <a href="https://www.facebook.com/adoreofficials" class="social-btn" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/adoreofficials/" class="social-btn" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
