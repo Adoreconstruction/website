@@ -91,7 +91,7 @@ const ADORE_FOOTER = `
     </div>
     <div class="footer-bottom">
       <span>&copy; 2024 <a href="index.html">Adore Constructions</a>. All Rights Reserved.</span>
-      <span>Built with precision &amp; pride in Nepal.</span>
+      <span>Built by <a href="https://rajatcj.com/?fromadoreconstructions">@rajatcj</a></span>
     </div>
   </div>
 </footer>
