@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the Adore Constructions team — civil engineers, mechanical engineers, architects and professionals behind every build in Nepal.">
+  <title>Our Team — Adore Constructions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="components.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    .team-hero-img {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80') center/cover;
+      opacity: 0.18;
+    }
+    .team-full-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+    @media(max-width:1100px){ .team-full-grid{ grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:700px){ .team-full-grid{ grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px){ .team-full-grid{ grid-template-columns: 1fr; } }
+
+    .team-card-large .team-img-wrap { aspect-ratio: 2/3; }
+    .team-card-expertise {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;
+    }
+    .team-card-expertise span {
+      padding: 3px 10px; font-size: 10px;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      background: var(--bone); color: var(--ash);
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    .dept-title {
+      font-family: var(--font-display); font-size: 28px;
+      letter-spacing: 0.08em; color: var(--black);
+      margin: 60px 0 24px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .dept-title::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(to right, var(--gold), transparent);
+    }
+    .dept-title i { color: var(--gold); font-size: 20px; }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="position:relative">
+  <div class="team-hero-img"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="page-hero-label">The Experts</div>
+    <h1 class="section-title" style="color:var(--white);font-size:clamp(52px,8vw,110px)">Our <span>Team</span></h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Our Team</span></div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section-sm" style="background:var(--bone)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center" class="about-intro">
+      <div class="reveal">
+        <div class="section-label">Who Builds</div>
+        <h2 class="section-title">The People <span>Behind</span><br>Every Build</h2>
+      </div>
+      <p class="reveal-right" style="font-size:14px;color:var(--ash);line-height:1.9">
+        At Adore Constructions, we see ourselves as a <strong>family</strong>. Our team is a carefully assembled group of licensed architects, structural engineers, civil engineers, MEP contractors, and management professionals — all working together to deliver world-class results right here in Nepal. We believe that the quality of our team is the quality of your build.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINEERING TEAM -->
+<section class="section">
+  <div class="container">
+
+    <div class="dept-title reveal"><i class="fas fa-hard-hat"></i> Engineering Department</div>
+    <div class="team-full-grid">
+
+      <div class="team-card team-card-large reveal delay-1">
+        <div class="team-img-wrap">
+          <img src="./images/team/bishal.jpg" alt="Bishal Jha — Civil Engineer" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Bishal Jha</div>
+          <div class="team-role">Civil Engineer</div>
+          <div class="team-card-expertise">
+            <span>Structural Design</span><span>Construction</span><span>Planning</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card team-card-large reveal delay-2">
+        <div class="team-img-wrap">
+          <img src="./images/team/parmatma.jpg" alt="Pramatma Thakur — Civil Engineer" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Pramatma Thakur</div>
+          <div class="team-role">Civil Engineer</div>
+          <div class="team-card-expertise">
+            <span>Structural Analysis</span><span>Survey</span><span>Estimation</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card team-card-large reveal delay-3">
+        <div class="team-img-wrap">
+          <img src="./images/team/bicky.jpg" alt="Bicky Shah — Mechanical Engineer" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Bicky Shah</div>
+          <div class="team-role">Mechanical Engineer</div>
+          <div class="team-card-expertise">
+            <span>MEP Systems</span><span>HVAC</span><span>Supervision</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card team-card-large reveal delay-4">
+        <div class="team-img-wrap">
+          <img src="./images/team/rajat.png" alt="Rajat CJ — Wed Developer" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Rajat CJ</div>
+          <div class="team-role">Wed Developer</div>
+          <div class="team-card-expertise">
+            <span>Fullstack</span><span>SEO</span><span>Cloud</span><span>Medicine</span>
+          </div>
+          <div class="team-socials">
+            <a href="https://rajatcj.com/?fromadoreconstruction" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://instagram.com/rajat_cj" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<!-- Management Department
+    <div class="dept-title reveal"><i class="fas fa-briefcase"></i> Management &amp; Operations</div>
+    <div class="team-full-grid">
+
+      <div class="team-card team-card-large reveal delay-1">
+        <div class="team-img-wrap">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80" alt="Amarnath Shah — Marketing Manager" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Amarnath Shah</div>
+          <div class="team-role">Marketing &amp; Promotions Manager</div>
+          <div class="team-card-expertise">
+            <span>Marketing</span><span>PR</span><span>Client Relations</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card team-card-large reveal delay-2">
+        <div class="team-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80" alt="Team Member" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Site Supervisor</div>
+          <div class="team-role">Project Supervisor</div>
+          <div class="team-card-expertise">
+            <span>Site Management</span><span>QC</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card team-card-large reveal delay-3">
+        <div class="team-img-wrap">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="Interior Designer" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Design Lead</div>
+          <div class="team-role">Interior &amp; Architectural Design</div>
+          <div class="team-card-expertise">
+            <span>Interior</span><span>AutoCAD</span><span>3D Render</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card team-card-large reveal delay-4">
+        <div class="team-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500&q=80" alt="Surveyor" class="team-img">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Property Surveyor</div>
+          <div class="team-role">Valuation &amp; Survey</div>
+          <div class="team-card-expertise">
+            <span>Valuation</span><span>Survey</span><span>Reporting</span>
+          </div>
+          <div class="team-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- VALUES STRIP -->
+<section class="section-sm" style="background:var(--black)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:40px;text-align:center" class="culture-grid">
+      <style>.culture-grid{} @media(max-width:900px){.culture-grid{grid-template-columns:repeat(2,1fr) !important}} @media(max-width:480px){.culture-grid{grid-template-columns:1fr !important}}</style>
+      <div class="reveal delay-1">
+        <i class="fas fa-star" style="color:var(--gold);font-size:24px;margin-bottom:12px;display:block"></i>
+        <div style="font-family:var(--font-display);font-size:18px;color:var(--white);letter-spacing:0.06em">Performance Culture</div>
+      </div>
+      <div class="reveal delay-2">
+        <i class="fas fa-handshake" style="color:var(--gold);font-size:24px;margin-bottom:12px;display:block"></i>
+        <div style="font-family:var(--font-display);font-size:18px;color:var(--white);letter-spacing:0.06em">Accountability</div>
+      </div>
+      <div class="reveal delay-3">
+        <i class="fas fa-graduation-cap" style="color:var(--gold);font-size:24px;margin-bottom:12px;display:block"></i>
+        <div style="font-family:var(--font-display);font-size:18px;color:var(--white);letter-spacing:0.06em">Continuous Learning</div>
+      </div>
+      <div class="reveal delay-4">
+        <i class="fas fa-users" style="color:var(--gold);font-size:24px;margin-bottom:12px;display:block"></i>
+        <div style="font-family:var(--font-display);font-size:18px;color:var(--white);letter-spacing:0.06em">Relationship Building</div>
+      </div>
+      <div class="reveal delay-5">
+        <i class="fas fa-microchip" style="color:var(--gold);font-size:24px;margin-bottom:12px;display:block"></i>
+        <div style="font-family:var(--font-display);font-size:18px;color:var(--white);letter-spacing:0.06em">Technology</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN CTA -->
+<section class="section" style="background:var(--bone)">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center" class="about-intro">
+    <div class="reveal">
+      <div class="section-label">Join the Family</div>
+      <h2 class="section-title">Work With <span>Adore</span></h2>
+      <p style="font-size:14px;color:var(--ash);line-height:1.9;margin-top:16px;margin-bottom:32px">
+        We're always on the lookout for talented engineers, architects, designers and construction professionals who share our values and passion for quality. If you believe in building things that matter, we'd love to hear from you.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="reveal-right">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Adore team collaboration" style="width:100%;aspect-ratio:4/3;object-fit:cover;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)">
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="extras-placeholder"></div>
+</body>
+</html>

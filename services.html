@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services offered by Adore Constructions — Construction, Building, Structural Analysis, DPR, Project Planning, Estimation, Property Valuation, Interior Design, Skilled Manpower.">
+  <title>Services — Adore Constructions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="components.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    .service-detail {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+      align-items: start; padding: 80px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .service-detail:nth-child(even) .service-detail-content { order: -1; }
+    .service-detail-img {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+    }
+    .service-detail-num {
+      font-family: var(--font-display); font-size: 100px;
+      color: rgba(0,0,0,0.05); line-height: 0.8;
+      margin-bottom: 12px; letter-spacing: -0.02em;
+    }
+    .service-detail-icon { font-size: 32px; color: var(--gold); margin-bottom: 16px; }
+    .service-detail-title { font-family: var(--font-display); font-size: 38px; letter-spacing: 0.04em; margin-bottom: 16px; }
+    .service-detail-desc { font-size: 14px; color: var(--ash); line-height: 1.9; margin-bottom: 24px; }
+    .service-detail-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
+    .service-detail-list li {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 13px; color: var(--charcoal);
+    }
+    .service-detail-list li::before {
+      content: ''; display: block; flex-shrink: 0;
+      width: 6px; height: 6px; background: var(--gold);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    @media(max-width:900px){
+      .service-detail { grid-template-columns: 1fr; gap: 40px; }
+      .service-detail:nth-child(even) .service-detail-content { order: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">What We Offer</div>
+    <h1 class="section-title" style="color:var(--white);font-size:clamp(52px,8vw,110px)">Our <span>Services</span></h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
+  </div>
+</div>
+
+<!-- SERVICES OVERVIEW GRID -->
+<section class="section services-bg" style="padding-bottom:60px">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 60px">
+      <div class="section-label" style="justify-content:center">Full Spectrum</div>
+      <h2 class="section-title" style="color:var(--white)">Everything Under <span>One Roof</span></h2>
+    </div>
+    <div class="services-grid">
+      <a href="#construction" class="service-card reveal delay-1" style="text-decoration:none">
+        <div class="service-num">01</div><div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+        <div class="service-name">Construction</div><div class="service-desc">Roads, irrigation, drainage and culvert construction.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#building" class="service-card reveal delay-2" style="text-decoration:none">
+        <div class="service-num">02</div><div class="service-icon"><i class="fas fa-building"></i></div>
+        <div class="service-name">Building</div><div class="service-desc">Commercial, institutional, industrial &amp; residential buildings.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#structural" class="service-card reveal delay-3" style="text-decoration:none">
+        <div class="service-num">03</div><div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+        <div class="service-name">Structural Analysis</div><div class="service-desc">ETABS, SAFE, REVIT, AutoCAD modelling &amp; design.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#dpr" class="service-card reveal delay-4" style="text-decoration:none">
+        <div class="service-num">04</div><div class="service-icon"><i class="fas fa-file-alt"></i></div>
+        <div class="service-name">DPR</div><div class="service-desc">Detailed Project Reports for all construction types.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#planning" class="service-card reveal delay-1" style="text-decoration:none">
+        <div class="service-num">05</div><div class="service-icon"><i class="fas fa-tasks"></i></div>
+        <div class="service-name">Project Planning</div><div class="service-desc">End-to-end planning from feasibility to completion.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#estimation" class="service-card reveal delay-2" style="text-decoration:none">
+        <div class="service-num">06</div><div class="service-icon"><i class="fas fa-calculator"></i></div>
+        <div class="service-name">Estimation</div><div class="service-desc">Accurate cost, material, and risk analysis.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#valuation" class="service-card reveal delay-3" style="text-decoration:none">
+        <div class="service-num">07</div><div class="service-icon"><i class="fas fa-home"></i></div>
+        <div class="service-name">Property Valuation</div><div class="service-desc">Professional property assessment &amp; valuation reports.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#interior" class="service-card reveal delay-4" style="text-decoration:none">
+        <div class="service-num">08</div><div class="service-icon"><i class="fas fa-couch"></i></div>
+        <div class="service-name">Interior Design</div><div class="service-desc">Contemporary design from concept to execution.</div>
+        <div class="service-link">Details <i class="fas fa-arrow-right"></i></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED SERVICE SECTIONS -->
+<section class="section">
+  <div class="container">
+
+    <!-- Construction -->
+    <div class="service-detail" id="construction">
+      <div class="reveal-left">
+        <img src="https://images.unsplash.com/photo-1545622783-b3e021430fee?w=900&q=80" alt="Construction work in Nepal" class="service-detail-img">
+      </div>
+      <div class="service-detail-content reveal-right">
+        <div class="service-detail-num">01</div>
+        <div class="service-detail-icon"><i class="fas fa-hard-hat"></i></div>
+        <h2 class="service-detail-title">Construction</h2>
+        <p class="service-detail-desc">At ADORE, construction is our specialty. We have a qualified and experienced team from all sectors of building and construction, taking pride in solving problems and creating environments that motivate and inspire.</p>
+        <p class="service-detail-desc">We deal with all types of pavement — rigid and flexible — and extend our expertise to irrigation, drainage, pipe culverts and reinforced concrete culverts.</p>
+        <ul class="service-detail-list">
+          <li>Rigid &amp; Flexible Pavement Construction</li>
+          <li>Irrigation &amp; Drainage Works</li>
+          <li>Pipe Culvert Construction</li>
+          <li>Reinforced Concrete Culverts</li>
+          <li>Road &amp; Highway Development</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Building -->
+    <div class="service-detail" id="building">
+      <div class="service-detail-content reveal-left">
+        <div class="service-detail-num">02</div>
+        <div class="service-detail-icon"><i class="fas fa-building"></i></div>
+        <h2 class="service-detail-title">Building</h2>
+        <p class="service-detail-desc">We offer the best services for all categories of commercial spaces with our professional team, promising enhanced Infrastructure Management. We also believe home is where the heart is — crafting residential spaces with world-class architecture.</p>
+        <ul class="service-detail-list">
+          <li>Hotels &amp; Dormitory Accommodation</li>
+          <li>Institutional Buildings (Schools, Universities)</li>
+          <li>Industrial Structures (Factories, Warehouses)</li>
+          <li>Retail, Grocery Stores &amp; Shopping Malls</li>
+          <li>Medical Facilities &amp; Sports Facilities</li>
+          <li>Restaurants &amp; Commercial Spaces</li>
+          <li>Custom Residential Homes</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="reveal-right">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80" alt="Building construction" class="service-detail-img">
+      </div>
+    </div>
+
+    <!-- Structural Analysis -->
+    <div class="service-detail" id="structural">
+      <div class="reveal-left">
+        <img src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a?w=900&q=80" alt="Structural Analysis" class="service-detail-img">
+      </div>
+      <div class="service-detail-content reveal-right">
+        <div class="service-detail-num">03</div>
+        <div class="service-detail-icon"><i class="fas fa-drafting-compass"></i></div>
+        <h2 class="service-detail-title">Structural Analysis</h2>
+        <p class="service-detail-desc">We are highly proficient in modelling and design tools including ETABS, SAFE, REVIT and AutoCAD. With experience in precast building construction across residential, commercial, educational and healthcare facilities, we're ready for the most complex structural challenges.</p>
+        <ul class="service-detail-list">
+          <li>Residential Structural Design</li>
+          <li>Commercial &amp; Industrial Design</li>
+          <li>Institutional Structural Consultancy</li>
+          <li>Structural Audit &amp; Proof Checking</li>
+          <li>Precast Building Structural Design</li>
+          <li>ETABS, SAFE, REVIT, AutoCAD Modelling</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- DPR -->
+    <div class="service-detail" id="dpr">
+      <div class="service-detail-content reveal-left">
+        <div class="service-detail-num">04</div>
+        <div class="service-detail-icon"><i class="fas fa-file-alt"></i></div>
+        <h2 class="service-detail-title">Detailed Project Report</h2>
+        <p class="service-detail-desc">DPRs are the outputs of the planning and design phase — a very detailed and elaborate plan indicating the overall program, roles, responsibilities, activities and resources required. Our team provides every detail from background to execution blueprint.</p>
+        <ul class="service-detail-list">
+          <li>Background &amp; Promoter Experience</li>
+          <li>Land, Building &amp; Infrastructure Details</li>
+          <li>Labour Requirement &amp; Availability</li>
+          <li>Project Implementation Schedule</li>
+          <li>Full Project Cost Breakdown</li>
+          <li>Risk Assessment &amp; Recommended Measures</li>
+          <li>Irrigation, Highway, Residential, Commercial DPRs</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="reveal-right">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=80" alt="Detailed Project Report" class="service-detail-img">
+      </div>
+    </div>
+
+    <!-- Project Planning -->
+    <div class="service-detail" id="planning">
+      <div class="reveal-left">
+        <img src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?w=900&q=80" alt="Project Planning" class="service-detail-img">
+      </div>
+      <div class="service-detail-content reveal-right">
+        <div class="service-detail-num">05</div>
+        <div class="service-detail-icon"><i class="fas fa-tasks"></i></div>
+        <h2 class="service-detail-title">Project Planning</h2>
+        <p class="service-detail-desc">Construction planning is carried out by our professional managers — from project creation to completion, ensuring every phase is mapped, tracked and executed with precision.</p>
+        <ul class="service-detail-list">
+          <li>Feasibility Check &amp; Project Initiation Document</li>
+          <li>Detailed Plan Drafting (Smart &amp; Clear Process)</li>
+          <li>Plan Finalisation &amp; Team Briefing</li>
+          <li>KPI Setting &amp; Performance Tracking</li>
+          <li>Project Closing &amp; Re-evaluation</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Estimation -->
+    <div class="service-detail" id="estimation">
+      <div class="service-detail-content reveal-left">
+        <div class="service-detail-num">06</div>
+        <div class="service-detail-icon"><i class="fas fa-calculator"></i></div>
+        <h2 class="service-detail-title">Estimation</h2>
+        <p class="service-detail-desc">Estimation provides an approximate idea of the project — infrastructure, materials, and cost of work to be executed. Accurate estimates save time, money and prevent surprises during construction.</p>
+        <ul class="service-detail-list">
+          <li>Approximate Analysis of Work Scope</li>
+          <li>Critical Cost Acquisition Analysis</li>
+          <li>Material Quantity Estimation</li>
+          <li>Risk &amp; Problem Identification</li>
+          <li>Environment &amp; Locality Assessment</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="reveal-right">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&q=80" alt="Cost Estimation" class="service-detail-img">
+      </div>
+    </div>
+
+    <!-- Property Valuation -->
+    <div class="service-detail" id="valuation">
+      <div class="reveal-left">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80" alt="Property Valuation" class="service-detail-img">
+      </div>
+      <div class="service-detail-content reveal-right">
+        <div class="service-detail-num">07</div>
+        <div class="service-detail-icon"><i class="fas fa-home"></i></div>
+        <h2 class="service-detail-title">Property Valuation</h2>
+        <p class="service-detail-desc">A property valuation is an assessment based on location, condition and multiple other factors. Carried out in person by a professional surveyor who takes notes, photographs and delivers a comprehensive valuation report — useful for selling or taking a bank loan.</p>
+        <ul class="service-detail-list">
+          <li>In-person Survey by Licensed Professionals</li>
+          <li>Storage, Age, Size &amp; Wear Assessment</li>
+          <li>Room Layout &amp; Condition Evaluation</li>
+          <li>Market Comparison Analysis</li>
+          <li>Formal Valuation Report (Bank Accepted)</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Interior Design -->
+    <div class="service-detail" id="interior">
+      <div class="service-detail-content reveal-left">
+        <div class="service-detail-num">08</div>
+        <div class="service-detail-icon"><i class="fas fa-couch"></i></div>
+        <h2 class="service-detail-title">Interior Design</h2>
+        <p class="service-detail-desc">With a mission of providing everything under one roof, we extend our services to Interior Design. Our qualified team of architects, civil engineers and interior designers work closely together to transform imagination into contemporary reality.</p>
+        <ul class="service-detail-list">
+          <li>Residential Interior Design</li>
+          <li>Commercial Space Design</li>
+          <li>Concept to Execution</li>
+          <li>Contemporary &amp; Cultural Fusion Styles</li>
+          <li>Furniture Layout &amp; Material Selection</li>
+          <li>Lighting Design &amp; Fit-out Supervision</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="reveal-right">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="Interior Design" class="service-detail-img">
+      </div>
+    </div>
+
+    <!-- Skilled Manpower -->
+    <div class="service-detail" id="manpower" style="border-bottom:none">
+      <div class="reveal-left">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Skilled Manpower" class="service-detail-img">
+      </div>
+      <div class="service-detail-content reveal-right">
+        <div class="service-detail-num">09</div>
+        <div class="service-detail-icon"><i class="fas fa-users-cog"></i></div>
+        <h2 class="service-detail-title">Skilled Manpower</h2>
+        <p class="service-detail-desc">Skilled manpower is a critical factor in every construction project. Recognising the shortage in Nepal's construction field, Adore is focused on producing and supplying a group of quality-trained workers who can deliver excellent results.</p>
+        <ul class="service-detail-list">
+          <li>Skilled Construction Workers</li>
+          <li>Skilled Foremen &amp; Supervisors</li>
+          <li>Skilled Electricians</li>
+          <li>Skilled Sub-Engineers</li>
+          <li>Upliftment of Unskilled Workers</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="cta-banner-title">Need a <span>Custom</span><br>Solution?</h2>
+      <p class="cta-banner-sub">Every project is unique. Let's discuss yours.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary reveal delay-2">Contact Us <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<div id="extras-placeholder"></div>
+</body>
+</html>
