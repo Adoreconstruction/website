@@ -243,7 +243,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80') center/cover no-repeat;
+  background: url('./images/foundation3.jpg') center/cover no-repeat;
   opacity: 0.35;
   transform: scale(1.05);
   animation: heroZoom 12s ease-out forwards;
